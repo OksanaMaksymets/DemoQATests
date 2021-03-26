@@ -2,8 +2,7 @@
 dt=$(date '+%d/%m/%Y %H:%M:%S');
 $ echo "$dt"
 $ echo "$PWD"
-
-$ echo "each PATH element:"
+$ echo "each PAT element:"
 IFS=':'
 read -ra ADDR <<< "$PATH"
 for i in "${ADDR[@]}"; #accessing each element of array
