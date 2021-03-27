@@ -1,8 +1,8 @@
 @echo off
 
-del %cd%\parameters.txt
+del %cd%\parameters.txt 2>nul
 
-echo %DATE% > %cd%\output.txt
+echo %DATE% > %cd%\Build\output.txt
 echo %PATH% >> %cd%\output.txt
 
 set loop=0
