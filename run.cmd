@@ -1,6 +1,16 @@
 @echo off
 echo %DATE% > %cd%\output.txt
-set m=some new message
 echo %m%
 echo %PATH% > %cd%\output.txt
 echo %cd% > %cd%\output.txt
+
+set Count=3
+set Text=new text
+set loop=0
+:loop
+echo %Text%
+set /a loop=%loop%+1
+if "%loop%"=="%Count%" goto next
+call :loop
+:next
+
